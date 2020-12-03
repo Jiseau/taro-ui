@@ -360,7 +360,7 @@ export default class AtCalendarBody extends Taro.Component<
           onTouchStart={this.handleSwipeTouchStart}
         >
           {listGroup.map((item, key) => (
-            <SwiperItem key={item.value} itemId={key.toString()}>
+            <SwiperItem key={key.toString()} itemId={key.toString()}>
               <AtCalendarDateList
                 list={item.list}
                 onClick={this.props.onDayClick}
